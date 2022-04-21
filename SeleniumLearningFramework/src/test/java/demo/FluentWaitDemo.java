@@ -24,7 +24,7 @@ public class FluentWaitDemo {
 		driver.findElement(By.name("q")).sendKeys("automation");
 		driver.findElement(By.name("q")).sendKeys(Keys.RETURN);
 		
-		Wait<WebDriver> wait = 
+		//Wait<WebDriver> wait = 
 		
 	}
 	
