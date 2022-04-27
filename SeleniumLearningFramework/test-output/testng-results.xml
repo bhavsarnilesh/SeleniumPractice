@@ -1,36 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="8" passed="4" failed="2" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-21T22:33:43 IST" name="Default suite" finished-at="2022-04-21T22:34:25 IST" duration-ms="41769">
+  <suite started-at="2022-04-27T00:45:17 IST" name="Suite" finished-at="2022-04-27T00:45:17 IST" duration-ms="242">
     <groups>
     </groups>
-    <test started-at="2022-04-21T22:33:43 IST" name="Default test" finished-at="2022-04-21T22:34:25 IST" duration-ms="41769">
-      <class name="demo.SeleniumWaitDemo">
-        <test-method is-config="true" signature="setup()[pri:0, instance:demo.SeleniumWaitDemo@71ba6d4e]" started-at="2022-04-21T22:33:43 IST" name="setup" finished-at="2022-04-21T22:33:49 IST" duration-ms="5648" status="PASS">
+    <test started-at="2022-04-27T00:45:17 IST" name="Test" finished-at="2022-04-27T00:45:17 IST" duration-ms="242">
+      <class name="listeners.TestNGListnerDemo">
+        <test-method signature="test1()[pri:0, instance:listeners.TestNGListnerDemo@7db12bb6]" started-at="2022-04-27T00:45:17 IST" name="test1" finished-at="2022-04-27T00:45:17 IST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="seleniumWaits()[pri:0, instance:demo.SeleniumWaitDemo@71ba6d4e]" started-at="2022-04-21T22:33:49 IST" name="seleniumWaits" finished-at="2022-04-21T22:34:25 IST" duration-ms="35843" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: By.name: abcd (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'NILESH-BHAVSAR-', ip: '192.168.72.147', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63372}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63372/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d55e6bff5387593bf6ab01a73c594164]]>
-            </message>
+        </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:0, instance:listeners.TestNGListnerDemo@7db12bb6]" started-at="2022-04-27T00:45:17 IST" name="test2" finished-at="2022-04-27T00:45:17 IST" duration-ms="6" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.name: abcd (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'NILESH-BHAVSAR-', ip: '192.168.72.147', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63372}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63372/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d55e6bff5387593bf6ab01a73c594164
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at demo.SeleniumWaitDemo.seleniumWaits(SeleniumWaitDemo.java:38)
+              <![CDATA[java.lang.AssertionError
+at org.junit.Assert.fail(Assert.java:87)
+at org.junit.Assert.assertTrue(Assert.java:42)
+at org.junit.Assert.assertTrue(Assert.java:53)
+at listeners.TestNGListnerDemo.test2(TestNGListnerDemo.java:20)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -61,15 +49,158 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- seleniumWaits -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:demo.SeleniumWaitDemo@71ba6d4e]" started-at="2022-04-21T22:34:25 IST" name="tearDown" finished-at="2022-04-21T22:34:25 IST" duration-ms="202" status="PASS">
+        </test-method> <!-- test2 -->
+        <test-method signature="test3()[pri:0, instance:listeners.TestNGListnerDemo@7db12bb6]" started-at="2022-04-27T00:45:17 IST" name="test3" finished-at="2022-04-27T00:45:17 IST" duration-ms="4" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[This test case skipped]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: This test case skipped
+at listeners.TestNGListnerDemo.test3(TestNGListnerDemo.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- demo.SeleniumWaitDemo -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- test3 -->
+        <test-method signature="test4()[pri:0, instance:listeners.TestNGListnerDemo@7db12bb6]" started-at="2022-04-27T00:45:17 IST" name="test4" finished-at="2022-04-27T00:45:17 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+      </class> <!-- listeners.TestNGListnerDemo -->
+      <class name="listeners.TestNGListnerDemo2">
+        <test-method signature="testA()[pri:0, instance:listeners.TestNGListnerDemo2@4d5650ae]" started-at="2022-04-27T00:45:17 IST" name="testA" finished-at="2022-04-27T00:45:17 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method signature="testB()[pri:0, instance:listeners.TestNGListnerDemo2@4d5650ae]" started-at="2022-04-27T00:45:17 IST" name="testB" finished-at="2022-04-27T00:45:17 IST" duration-ms="96" status="FAIL">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from https://chromedriver.storage.googleapis.com/index.html]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from https://chromedriver.storage.googleapis.com/index.html
+at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:311)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:135)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:38)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:231)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:127)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:48)
+at listeners.TestNGListnerDemo2.testB(TestNGListnerDemo2.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testB -->
+        <test-method signature="testC()[pri:0, instance:listeners.TestNGListnerDemo2@4d5650ae]" started-at="2022-04-27T00:45:17 IST" name="testC" finished-at="2022-04-27T00:45:17 IST" duration-ms="3" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[This test case skipped]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: This test case skipped
+at listeners.TestNGListnerDemo2.testC(TestNGListnerDemo2.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testC -->
+        <test-method signature="testD()[pri:0, instance:listeners.TestNGListnerDemo2@4d5650ae]" started-at="2022-04-27T00:45:17 IST" name="testD" finished-at="2022-04-27T00:45:17 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testD -->
+      </class> <!-- listeners.TestNGListnerDemo2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
